@@ -1,0 +1,159 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+
+/* layout */
+:root {
+  --primary: #1aac83;
+  --error: #e7195a;
+}
+body {
+  background: #f1f1f1;
+  margin: 0;
+  font-family: 'Poppins';
+}
+.header {
+  background: #d71313;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.tracker {
+  color: #fff;
+  font-size: 3.5em;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
+}
+
+img {
+  width: 120px;
+}
+
+.pages {
+  max-width: 1400px;
+  max-height: 100vh;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* homepage */
+.add-workout {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+
+.form-group {
+  border-right: 2px solid #82c480;
+  padding-right: 25px;
+}
+
+.btn {
+  background: var(--primary);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-right: 3px;
+  border: none;
+}
+
+.workout-details {
+  background: #82c480;
+  border-radius: 10px;
+  margin: 20px auto;
+  padding: 20px;
+  position: relative;
+  box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.5);
+}
+.workout-details h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+}
+.workout-details p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #555;
+}
+.workout-details span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background: #f1f1f1;
+  padding: 6px;
+  border-radius: 50%;
+  color: #333;
+}
+
+/* new workout form */
+label,
+input {
+  display: block;
+}
+input {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form button {
+  background: var(--primary);
+  border: 0;
+  color: #fff;
+  padding: 10px;
+  font-family: 'Poppins';
+  border-radius: 4px;
+  cursor: pointer;
+}
+div.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+}
+input.error {
+  border: 1px solid var(--error);
+}
+
+@media screen and (max-width: 1024px) {
+  .add-workout {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .tracker {
+    font-size: 3rem;
+  }
+  .header {
+    justify-content: center;
+    border: 2px solid red;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .add-workout {
+    grid-template-columns: 1fr;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .tracker {
+    font-size: 2em;
+  }
+  .header {
+    justify-content: center;
+  }
+  img {
+    width: 100px;
+  }
+  .form-group {
+    border: none;
+  }
+}

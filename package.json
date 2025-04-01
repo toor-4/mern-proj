@@ -1,0 +1,30 @@
+{
+  "name": "frontend-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development nodemon ./backend/server.js",
+    "build": "npm install && npm install --prefix frontend and npm run build --prefix frontend",
+    "start": "NODE_ENV=production node ./backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toor-4/frontend-backend-notes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/toor-4/frontend-backend-notes/issues"
+  },
+  "homepage": "https://github.com/toor-4/frontend-backend-notes#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.13.1",
+    "nodemon": "^3.1.9"
+  }
+}
