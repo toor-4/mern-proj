@@ -19,7 +19,7 @@ function App() {
     load: '',
   });
 
-  const API_URL = 'http://localhost:3500/api/workouts';
+  const API_URL = 'http://localhost:5000/api/workouts';
 
   useEffect(() => {
     const fetchWorkouts = async () => {

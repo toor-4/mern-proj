@@ -8,7 +8,7 @@ const cors = require('cors');
 const workoutRoute = require('./routes/workoutRoutes.js');
 
 const app = express();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 3500;
 
 // middleware
 app.use(cors()); // allows us to make requests from backend to frontend
