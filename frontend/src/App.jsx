@@ -19,7 +19,7 @@ function App() {
     load: '',
   });
 
-  const API_URL = 'https://mern-proj-pae3.onrender.com';
+  const API_URL = 'https://mern-proj-pae3.onrender.com/api/workouts';
 
   useEffect(() => {
     const fetchWorkouts = async () => {
