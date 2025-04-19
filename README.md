@@ -2,6 +2,8 @@
 
 This is a full-stack project built using the MERN stack (MongoDB, Express.js, React, and Node.js). It serves as a template for building modern web applications with a backend API and a frontend user interface.
 
+https://mern-proj-pae3.onrender.com
+
 ## Features
 
 - **Frontend**: Built with React for a dynamic and responsive user interface.
